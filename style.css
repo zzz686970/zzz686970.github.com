@@ -1,3 +1,4 @@
+
 /*Body*/
 body {
 	margin: 0;
@@ -41,7 +42,19 @@ a:hover {
 	color: #000;
 }
 
-
+#goTopBtn {
+	POSITION: fixed; 
+	
+	LINE-HEIGHT: 30px; 
+	WIDTH: 30px; 
+	BOTTOM: 35px; 
+	HEIGHT: 33px; 
+	FONT-SIZE: 12px; 
+	CURSOR: pointer; 
+	RIGHT: 195px; 
+	_position: absolute; 
+	_right: auto
+}
 /* Header */
 
 #menu{
@@ -251,6 +264,52 @@ a:hover {
 
 
 #sidebar p {
+	line-height: 200%;
+}
+/*sidebar readings*/
+
+#sidebar_1 {
+	float: left;
+	width: 220px;
+}
+
+#sidebar_1 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar_1 li {
+	margin-bottom: 30px;
+	padding: 0 0 10px 0px;
+}
+
+#sidebar_1 li ul {
+}
+
+#sidebar_1 li li {
+	margin: 0;
+	padding-left: 15px;
+	background: url(images/img05.jpg) no-repeat left 5px;
+}
+
+#sidebar_1 p {
+	margin: 0;
+}
+#sidebar_1 a{text-decoration:none;}
+#sidebar_1 a:hover{text-decoration:underline;}
+
+#sidebar_1 h2 {
+	height: 25px;
+	margin: 0 0 10px 0px;
+	padding: 8px 0 2px 0px;
+	border-bottom: 1px #BDBDBB dotted;
+	color: #42423E;
+}
+
+
+#sidebar_1 p {
 	line-height: 200%;
 }
 
