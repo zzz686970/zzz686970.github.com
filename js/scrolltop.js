@@ -56,7 +56,7 @@ document.write("<TR><th colspan='7' bgcolor='#C8E3FF'>");
 var dayNames = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
 var monthNames = new Array("1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月");
 var now = new Date();
-document.writeln("<FONT STYLE='font-size:9pt;Color:#330099'>" + now.getYear() + "年" + monthNames[now.getMonth()] + " " + now.getDate() + "日 " + dayNames[now.getDay()] + "</FONT>");
+document.writeln("<FONT STYLE='font-size:9pt;Color:#330099'>" + year + "年" + monthNames[now.getMonth()] + " " + now.getDate() + "日 " + dayNames[now.getDay()] + "</FONT>");
 document.writeln("</TH></TR><TR><TH BGCOLOR='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>日</FONT></TH>");
 document.writeln("<th bgcolor='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>一</FONT></TH>");
 document.writeln("<TH BGCOLOR='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>二</FONT></TH>");
@@ -106,10 +106,10 @@ document.writeln("</TD></TR></TABLE></FORM>");
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
 	var seconds = now.getSeconds()
-	var timeValue = " " + ((hours >12) ? hours -12 :hours)
+	var timeValue = " " + hours
 	timeValue += ((minutes < 10) ? ":0" : ":") + minutes
 	timeValue += ((seconds < 10) ? ":0" : ":") + seconds
-	timeValue += (hours >= 12) ? " 下午 " : " 上午 "
+
 	document.clock.face.value = timeValue;
 	timerID = setTimeout("showtime()",1000);//设置超时,使时间动态显示
 	timerRunning = true;}
